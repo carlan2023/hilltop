@@ -139,7 +139,7 @@ nav img:hover{
     justify-content: space-between;
  }
  .activities{
-    flex-basis: 31%;
+    flex-basis: 49%;
     background: #fae8e8;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -292,7 +292,7 @@ nav img:hover{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(post-sign.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(veranda.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
