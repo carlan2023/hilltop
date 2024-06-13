@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial System Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .section {
+            display: flex;
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .icon {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .financial-system, .users {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .bank {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <div>
+            <div class="section-title">Financial system</div>
+            <div class="financial-system">
+                <div class="box">
+                    <div class="title">Payment Service provider</div>
+                    <div class="box">
+                        <div class="title">Processing</div>
+                        <div class="icon">💳</div>
+                        <div>Card</div>
+                        <div class="icon">📲</div>
+                        <div>QR Pay</div>
+                        <div class="icon">💵</div>
+                        <div>Alipay</div>
+                    </div>
+                    <div class="box">
+                        <div class="title">Mobile wallet</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="title">Banking administration</div>
+                    <div class="box">
+                        <div class="icon">💻</div>
+                        <div>Admin panel</div>
+                        <div class="icon">🌐</div>
+                        <div>Web TMS</div>
+                        <div class="icon">🔑</div>
+                        <div>KMS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section bank">
+        <div class="section-title">M4 Bank</div>
+        <div>combines key areas of application: private clients and financial systems</div>
+    </div>
+    
+    <div class="section">
+        <div>
+            <div class="section-title">Users</div>
+            <div class="users">
+                <div class="box">
+                    <div class="title">Point of Sale</div>
+                    <div class="box">
+                        <div class="icon">🔲</div>
+                        <div>POS + QR code</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">📱</div>
+                        <div>Smartphone QR, APP</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">🖥️</div>
+                        <div>Smart POS</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">🖥️</div>
+                        <div>POS</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">🖥️</div>
+                        <div>Soft POS</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="title">Merchant</div>
+                    <div class="box">
+                        <div class="icon">🌐</div>
+                        <div>Merchant web portal</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">📂</div>
+                        <div>Web catalog</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
