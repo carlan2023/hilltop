@@ -192,57 +192,76 @@
     </section>
 
     <!----- donations----->
-
-    <section class="donations">
-      <h1>What our donors say</h1>
-
-      <div class="row">
-        <div class="donation-col">
-          <img src="IMG-20231001-WA0011.jpg" />
-          <div>
-            <p>
-              Supporting the Sponsor a Child program has been an incredibly
-              rewarding experience for me. Knowing that my contributions are
-              directly impacting a child's life and education fills me with a
-              sense of purpose and fulfillment. I've had the opportunity to see
-              the progress and achievements of the child I'm sponsoring, and
-              it's truly heartwarming to witness their growth and success. The
-              program keeps me informed and engaged, making me feel like an
-              essential part of the child's journey. I highly recommend this
-              program to anyone looking to make a tangible difference in a
-              child's life.
-            </p>
-            <h3>Jonathan Hughes</h3>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
+    <!-- Donate Section -->
+    <section id="donate">
+      <h2>Donate Now</h2>
+      <p>
+        Your generous donation helps us provide education and support to those
+        in need.
+      </p>
+      <div class="payment-options">
+        <!-- PayPal Option -->
+        <div class="payment-method">
+          <i class="fab fa-paypal"></i>
+          <h3>PayPal</h3>
+          <form
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+          >
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="alan@globalwesttechnologiies.org"
+            />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
         </div>
-        <div class="donation-col">
-          <img src="IMG-20231001-WA0011.jpg" />
-          <div>
-            <p>
-              As a donor to the Sponsor a Child program, I can confidently say
-              that my experience has been nothing short of amazing. The
-              transparency and communication from the organization have been
-              excellent, allowing me to see exactly how my donations are being
-              used to support the child's education and well-being. It’s
-              incredibly fulfilling to know that my support is helping to
-              provide opportunities and hope to a child who deserves the chance
-              to thrive. This program not only changes the lives of the children
-              but also enriches the lives of donors by connecting us to a
-              greater purpose. I'm proud to be a part of this wonderful
-              initiative.
-            </p>
-            <h3>Christine Salt</h3>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
+        <!-- Visa Option -->
+        <div class="payment-method">
+          <i class="fab fa-cc-visa"></i>
+          <h3>Visa</h3>
+          <a
+            href="https://your-payment-gateway.com/donate"
+            class="donate-btn"
+            target="_blank"
+            >Donate with Visa</a
+          >
+        </div>
+        <!-- Sendwave Option -->
+        <div class="payment-method">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Sendwave</h3>
+          <p>To donate via Sendwave, please follow these steps:</p>
+          <ol style="text-align: left; margin: 0 auto; max-width: 80%">
+            <li>
+              Download the Sendwave app or visit
+              <a href="https://www.sendwave.com" target="_blank">Sendwave</a>.
+            </li>
+            <li>Sign up or log in to your account.</li>
+            <li>
+              Select "Send Money" and enter the recipient details: [Recipient
+              Phone Number]
+            </li>
+            <li>Enter the donation amount and complete the transaction.</li>
+          </ol>
+          <a href="https://www.sendwave.com" class="donate-btn" target="_blank"
+            >Go to Sendwave</a
+          >
         </div>
       </div>
     </section>
@@ -258,20 +277,35 @@
     </section>
 
     <!------Footer------>
-
+    <!-- Footer Section -->
     <section class="footer">
       <h4>In God We Trust</h4>
       <p>No Gain Without Pain</p>
       <div class="icons">
-        <i class="fa fa-user-circle" aria-hidden="true"></i>
-        <i class="fa fa-envelope-open"></i>
-        <i class="fa fa-phone"></i>
+        <a href="https://facebook.com/sthenrys"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/sthenrys"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com/sthenrys"
+          ><i class="fab fa-instagram"></i
+        ></a>
       </div>
+      <p>
+        Stay connected—join our newsletter for updates on the lives you’re
+        transforming.
+      </p>
+      <form action="newsletter.php" method="post">
+        <input type="email" name="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </form>
       <h5>Made with <i class="fa fa-heart"></i> by Allan Mitanda</h5>
     </section>
+
+    <!-- Navigation Toggle Script -->
     <script>
       var navLinks = document.getElementById("navLinks");
-
       function showMenu() {
         navLinks.style.right = "0";
       }
